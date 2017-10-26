@@ -16,4 +16,11 @@ public class SphereController : MonoBehaviour {
     }
     void Start () {
 	}
+    void Update()
+    {
+        if (transform.position.z >= 10)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
